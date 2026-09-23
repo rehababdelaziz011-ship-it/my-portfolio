@@ -4,10 +4,8 @@ export default function Portfolio() {
   // oxlint-disable-next-line no-empty-pattern
   const [] = useState(false);
 
-  // 1. ضعِ هنا رابط أو مسار صورتك الشخصية
-  const myPhotoUrl = "src/assets/hero-profile.jpg"; // استبدلي هذا برابط صورتك أو مسارها المحلي
+  const myPhotoUrl = "src/assets/hero-profile.jpg"; 
 
-  // 2. قائمة المشاريع مع صورها
   const projects = [
     {
       title: "Medical Booking App",
@@ -15,7 +13,7 @@ export default function Portfolio() {
       description: "A comprehensive medical booking platform achieving 100% responsive layout compatibility. Engineered clean component structures and interactive booking workflows, boosting user retention by 35% and load speeds (95%+ efficiency).",
       tags: ["React.js", "Tailwind CSS", "JavaScript", "REST APIs"],
       github: "https://github.com/rehababdelaziz011-ship-it/medical-booking-app",
-      image: "public\\Screenshot 2026-09-23 002204.png" //
+      image: "\Screenshot 2026-09-23 002204.png" 
     },
     {
       title: "Tech Nova Project",
@@ -23,7 +21,7 @@ export default function Portfolio() {
       description: "Collaborated to build a robust full-stack web application, taking absolute ownership of frontend implementation and UI design. Integrated complex REST APIs resulting in a 30% reduction in page load latency.",
       tags: ["JavaScript", "HTML5", "CSS3", "API Integration"],
       github: "https://github.com/rehababdelaziz011-ship-it",
-      image: "public\\Screenshot 2026-09-22 025010.png" // 
+      image: "\Screenshot 2026-09-22 025010.png" // 
     },
     {
       title: "E-Commerce Furniture Store",
@@ -31,7 +29,7 @@ export default function Portfolio() {
       description: "Designed and deployed a fully responsive e-commerce web interface featuring advanced product catalogs, real-time dynamic filtering, and interactive image galleries with 100% cross-browser compatibility.",
       tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "https://github.com/rehababdelaziz011-ship-it",
-      image: "public\\Screenshot 2026-09-21 024940.png" 
+      image: "\Screenshot 2026-09-21 024940.png" 
     }
   ];
 
@@ -49,7 +47,6 @@ export default function Portfolio() {
   return (
     <div style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif', backgroundColor: '#0b0f19', color: '#f1f5f9', minHeight: '100vh', margin: 0, padding: 0, lineHeight: 1.7 }}>
       
-      {/* Navigation Bar */}
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000, backgroundColor: 'rgba(11, 15, 25, 0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px', height: '75px', display: 'flex', alignItems: 'center', justifyBetween: 'space-between' }}>
           <span style={{ fontWeight: '800', fontSize: '1.25rem', background: 'linear-gradient(to right, #60a5fa, #38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '0.5px' }}>
@@ -65,11 +62,9 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Hero Section مع الصورة الشخصية */}
       <header style={{ padding: '160px 32px 90px 32px', textAlign: 'center', background: 'radial-gradient(circle at 50% 20%, rgba(30, 58, 138, 0.25) 0%, rgba(11, 15, 25, 1) 75%)' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           
-          {/* الصورة الشخصية */}
           <div style={{ position: 'relative', marginBottom: '25px' }}>
             <img 
               src={myPhotoUrl} 
@@ -116,7 +111,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section (مع صور المشاريع) */}
       <section id="projects" style={{ padding: '90px 32px', maxWidth: '1200px', margin: '0 auto' }}>
         <h2 style={{ fontSize: '2rem', fontWeight: '800', textAlign: 'center', marginBottom: '50px', color: '#ffffff' }}>
           <span style={{ color: '#38bdf8' }}>02.</span> Featured Projects
@@ -126,7 +120,6 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div key={index} style={{ backgroundColor: '#131c2e', borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               
-              {/* صورة المشروع */}
               <div style={{ width: '100%', height: '200px', overflow: 'hidden', backgroundColor: '#0b0f19' }}>
                 <img 
                   src={project.image} 
@@ -135,7 +128,6 @@ export default function Portfolio() {
                 />
               </div>
 
-              {/* تفاصيل المشروع */}
               <div style={{ padding: '28px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '1.5px' }}>{project.category}</span>
