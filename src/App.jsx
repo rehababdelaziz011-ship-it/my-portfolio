@@ -13,15 +13,14 @@ export default function Portfolio() {
       description: "A comprehensive medical booking platform achieving 100% responsive layout compatibility. Engineered clean component structures and interactive booking workflows, boosting user retention by 35% and load speeds (95%+ efficiency).",
       tags: ["React.js", "Tailwind CSS", "JavaScript", "REST APIs"],
       github: "https://github.com/rehababdelaziz011-ship-it/medical-booking-app",
-      image: "\Screenshot 2026-09-23 002204.png" 
-    },
+image: "/project1.png"    },
     {
       title: "Tech Nova Project",
       category: "Full-Stack Collaboration Project",
       description: "Collaborated to build a robust full-stack web application, taking absolute ownership of frontend implementation and UI design. Integrated complex REST APIs resulting in a 30% reduction in page load latency.",
       tags: ["JavaScript", "HTML5", "CSS3", "API Integration"],
       github: "https://github.com/rehababdelaziz011-ship-it",
-      image: "\Screenshot 2026-09-22 025010.png" // 
+image: "/project2.png"
     },
     {
       title: "E-Commerce Furniture Store",
@@ -29,8 +28,7 @@ export default function Portfolio() {
       description: "Designed and deployed a fully responsive e-commerce web interface featuring advanced product catalogs, real-time dynamic filtering, and interactive image galleries with 100% cross-browser compatibility.",
       tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "https://github.com/rehababdelaziz011-ship-it",
-      image: "\Screenshot 2026-09-21 024940.png" 
-    }
+image: "/project3.png"    }
   ];
 
   const skills = [
